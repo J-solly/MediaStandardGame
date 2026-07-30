@@ -255,6 +255,30 @@
         "name": "cancelui.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Screenshot 2026-07-30 102000.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Screenshot 2026-07-30 102000.png\",\"extension\":\".png\"}",
+        "name": "Screenshot 2026-07-30 102000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Screenshot 2026-07-30 101940.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Screenshot 2026-07-30 101940.png\",\"extension\":\".png\"}",
+        "name": "Screenshot 2026-07-30 101940.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Screenshot 2026-07-30 102005.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Screenshot 2026-07-30 102005.png\",\"extension\":\".png\"}",
+        "name": "Screenshot 2026-07-30 102005.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -306,6 +330,8 @@
           "PlatformerCharacter": "PlatformerObject"
         },
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -318,9 +344,7 @@
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 700,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
           "xGrabTolerance": 10,
@@ -462,10 +486,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ]
@@ -482,10 +506,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ]
@@ -571,19 +595,31 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        }
+      ],
       "animations": [
         {
-          "name": "",
+          "name": "Screenshot 2026-07-30 102005",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "settingui.png",
+                  "image": "Screenshot 2026-07-30 102005.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -599,20 +635,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 16,
-                        "y": 8
+                        "x": 0,
+                        "y": 1
                       },
                       {
-                        "x": 349,
-                        "y": 8
+                        "x": 331,
+                        "y": 1
                       },
                       {
-                        "x": 349,
-                        "y": 72
+                        "x": 331,
+                        "y": 64
                       },
                       {
-                        "x": 16,
-                        "y": 72
+                        "x": 0,
+                        "y": 64
                       }
                     ]
                   ]
@@ -632,19 +668,31 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        }
+      ],
       "animations": [
         {
-          "name": "",
+          "name": "Screenshot 2026-07-30 101940",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "returnToMainMenui.png",
+                  "image": "Screenshot 2026-07-30 101940.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -660,20 +708,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 32,
-                        "y": 33
+                        "x": 0,
+                        "y": 2
                       },
                       {
-                        "x": 363,
-                        "y": 33
+                        "x": 331,
+                        "y": 2
                       },
                       {
-                        "x": 363,
-                        "y": 96
+                        "x": 331,
+                        "y": 63
                       },
                       {
-                        "x": 32,
-                        "y": 96
+                        "x": 0,
+                        "y": 63
                       }
                     ]
                   ]
@@ -693,19 +741,31 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        }
+      ],
       "animations": [
         {
-          "name": "",
+          "name": "Screenshot 2026-07-30 102000",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "cancelui.png",
+                  "image": "Screenshot 2026-07-30 102000.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -721,20 +781,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6,
-                        "y": 3
+                        "x": 2,
+                        "y": 2
                       },
                       {
-                        "x": 340,
-                        "y": 3
+                        "x": 333,
+                        "y": 2
                       },
                       {
-                        "x": 340,
-                        "y": 68
+                        "x": 333,
+                        "y": 65
                       },
                       {
-                        "x": 6,
-                        "y": 68
+                        "x": 2,
+                        "y": 65
                       }
                     ]
                   ]
@@ -2133,7 +2193,14 @@
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "pauseActive",
+          "persistentUuid": "47a27a59-c427-4516-935f-5a498f1ab084",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -2190,13 +2257,61 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "UI",
           "name": "escButton",
           "persistentUuid": "08909ef1-096d-474d-8560-74ef432eb4ed",
           "width": 0,
           "x": 1145,
           "y": 19,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "pauseUI",
+          "name": "cancelUI",
+          "persistentUuid": "3c0de336-642f-48dd-b212-acd53d2048d6",
+          "width": 0,
+          "x": 452,
+          "y": 397,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "pauseUI",
+          "name": "returnToMenuI",
+          "persistentUuid": "5ad0c7de-d239-42d6-a88e-29657de28807",
+          "width": 0,
+          "x": 453,
+          "y": 232,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "pauseUI",
+          "name": "settingsPauseUI",
+          "persistentUuid": "73b95d83-b141-464d-9052-cf5ad3582731",
+          "width": 0,
+          "x": 453,
+          "y": 316,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2406,9 +2521,244 @@
           "comment": "Pausing Game"
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 226,
+            "g": 144,
+            "r": 74,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Beginning pause"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "escButton",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "pauseActive",
+                "Toggle",
+                "="
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Escape\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "pauseActive",
+                "Toggle",
+                "="
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 226,
+            "g": 144,
+            "r": 74,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "leaving game/continuing game"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "returnToMenuI",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main menu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "settingsPauseUI",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"settings\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "cancelUI",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "pauseActive",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 226,
+            "g": 144,
+            "r": 74,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "pause logic"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "pauseActive",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"pauseUI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "pauseActive",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"pauseUI\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
