@@ -279,6 +279,38 @@
         "name": "Screenshot 2026-07-30 102005.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "homeAreaHouses-1.png.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "homeAreaHouses-1.png.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "homeAreaHouses-2.png.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "homeAreaHouses-2.png.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/homeAreaHouses-2.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "homeAreaHouses-2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -2187,7 +2219,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.39251611754882226,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2211,7 +2243,7 @@
           "layer": "",
           "name": "grassBlock",
           "persistentUuid": "037a9a4d-bd8f-43d9-b44b-8bd908768813",
-          "width": 1331,
+          "width": 2362,
           "x": -33,
           "y": 597,
           "zOrder": 1,
@@ -2228,7 +2260,7 @@
           "layer": "",
           "name": "dirtBlock",
           "persistentUuid": "910ae135-3c0e-4252-95da-e96e5ea86dcf",
-          "width": 1366,
+          "width": 2369,
           "x": -39,
           "y": 656,
           "zOrder": 2,
@@ -2315,11 +2347,192 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "smallHouse",
+          "persistentUuid": "ab249aeb-97d2-4390-af8b-9a391033b18c",
+          "width": 0,
+          "x": 74,
+          "y": 287,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "largeHouse",
+          "persistentUuid": "0850f160-1fc1-4390-bde3-59c57448597d",
+          "width": 0,
+          "x": 316,
+          "y": 290,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "smallHouse",
+          "persistentUuid": "346930fa-081c-4df5-b6e9-1984fa6682c0",
+          "width": 0,
+          "x": 1028,
+          "y": 286,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
-      "objects": [],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "smallHouse",
+          "persistentUuid": "9c5e3e6c-3b95-4891-81ae-b86e4c23e938",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "default",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 49,
+                            "y": 143
+                          },
+                          {
+                            "x": 201,
+                            "y": 143
+                          },
+                          {
+                            "x": 201,
+                            "y": 311
+                          },
+                          {
+                            "x": 49,
+                            "y": 311
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "largeHouse",
+          "persistentUuid": "fa78e58f-1af9-4b90-a3b1-d13272b53827",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "homeAreaHouses-2.png",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "homeAreaHouses-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 49,
+                            "y": 6
+                          },
+                          {
+                            "x": 236,
+                            "y": 6
+                          },
+                          {
+                            "x": 236,
+                            "y": 311
+                          },
+                          {
+                            "x": 49,
+                            "y": 311
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "objectsFolderStructure": {
-        "folderName": "__ROOT"
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "smallHouse"
+          },
+          {
+            "objectName": "largeHouse"
+          }
+        ]
       },
       "events": [
         {
