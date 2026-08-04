@@ -311,6 +311,14 @@
         "name": "homeAreaHouses-2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "treeMedia-1.png.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "treeMedia-1.png.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1053,7 +1061,7 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
@@ -2219,7 +2227,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.39251611754882226,
+        "zoomFactor": 0.787629010167376,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2395,6 +2403,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "7afdfc3e-8d8b-429c-a83b-ef1c786e477d",
+          "width": 0,
+          "x": 717,
+          "y": 297,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2521,6 +2545,67 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "tree",
+          "persistentUuid": "3af45b7c-b9cc-416d-8d95-4d6552619fda",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "treeMedia-1.png.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20,
+                            "y": 20
+                          },
+                          {
+                            "x": 284,
+                            "y": 20
+                          },
+                          {
+                            "x": 284,
+                            "y": 300
+                          },
+                          {
+                            "x": 20,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2531,6 +2616,9 @@
           },
           {
             "objectName": "largeHouse"
+          },
+          {
+            "objectName": "tree"
           }
         ]
       },
