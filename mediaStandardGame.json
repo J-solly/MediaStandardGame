@@ -319,6 +319,38 @@
         "name": "treeMedia-1.png.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "heartsDeckInactive.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"heartsDeckInactive.png\",\"extension\":\".png\"}",
+        "name": "heartsDeckInactive.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "heartsDeckActive.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "heartsDeckActive.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "spadesDeckInactive.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spadesDeckInactive.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "spadesDeckActive.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spadesDeckActive.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -844,6 +876,225 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "heartsDeck",
+      "persistentUuid": "e81b3d8f-8c14-4369-8af3-79a1b03fc35b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "inactive",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "heartsDeckInactive.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 76
+                      },
+                      {
+                        "x": 5,
+                        "y": 76
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "active",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "heartsDeckActive.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 76
+                      },
+                      {
+                        "x": 5,
+                        "y": 76
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "spadesDeck",
+      "persistentUuid": "316c345f-2151-40f1-942f-099fbf757478",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "inactive",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "spadesDeckInactive.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 76
+                      },
+                      {
+                        "x": 5,
+                        "y": 76
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "active",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "spadesDeckActive.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 34
+                      },
+                      {
+                        "x": 105,
+                        "y": 76
+                      },
+                      {
+                        "x": 5,
+                        "y": 76
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -863,6 +1114,12 @@
       {
         "folderName": "UI",
         "children": [
+          {
+            "objectName": "spadesDeck"
+          },
+          {
+            "objectName": "heartsDeck"
+          },
           {
             "folderName": "pauseUI",
             "children": [
@@ -888,7 +1145,18 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "heartsDeckActive",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "spadesDeckActive",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "b": 97,
@@ -912,7 +1180,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.5290357402156838,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2227,7 +2495,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.787629010167376,
+        "zoomFactor": 0.40575189059438477,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2419,11 +2687,43 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "spadesDeck",
+          "persistentUuid": "0448765f-a143-419a-ba9f-439faf1d70b6",
+          "width": 0,
+          "x": 1133,
+          "y": 475,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "heartsDeck",
+          "persistentUuid": "d6a2454d-57c0-4caf-a180-6e0ff2ce826b",
+          "width": 0,
+          "x": 1085,
+          "y": 568,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "smallHouse",
           "persistentUuid": "9c5e3e6c-3b95-4891-81ae-b86e4c23e938",
@@ -2431,7 +2731,15 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
               "name": "default",
@@ -2460,20 +2768,16 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 49,
+                            "x": 123,
                             "y": 143
                           },
                           {
-                            "x": 201,
-                            "y": 143
+                            "x": 199.5,
+                            "y": 196
                           },
                           {
-                            "x": 201,
-                            "y": 311
-                          },
-                          {
-                            "x": 49,
-                            "y": 311
+                            "x": 48.5,
+                            "y": 195
                           }
                         ]
                       ]
@@ -2485,7 +2789,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "largeHouse",
           "persistentUuid": "fa78e58f-1af9-4b90-a3b1-d13272b53827",
@@ -2493,7 +2797,15 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
               "name": "homeAreaHouses-2.png",
@@ -2522,20 +2834,30 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 49,
-                            "y": 6
+                            "x": 125,
+                            "y": 144.5
                           },
                           {
-                            "x": 236,
-                            "y": 6
+                            "x": 197,
+                            "y": 195
                           },
                           {
-                            "x": 236,
-                            "y": 311
+                            "x": 50,
+                            "y": 195
+                          }
+                        ],
+                        [
+                          {
+                            "x": 234,
+                            "y": 102
                           },
                           {
-                            "x": 49,
-                            "y": 311
+                            "x": 136.5,
+                            "y": 99.5
+                          },
+                          {
+                            "x": 186,
+                            "y": 3
                           }
                         ]
                       ]
@@ -2757,6 +3079,16 @@
                 "",
                 "\"LShift\""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "heartsDeckActive",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -2768,6 +3100,225 @@
                 "player",
                 "HorizontalDash",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 226,
+            "g": 144,
+            "r": 74,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Double jump"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "heartsDeckActive",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AdvancedJump::AdvancedJump::SetAirJumpCountMaximum"
+              },
+              "parameters": [
+                "player",
+                "AdvancedJump",
+                "0",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AdvancedJump::AdvancedJump::SetAirJumpCountMaximum"
+              },
+              "parameters": [
+                "player",
+                "AdvancedJump",
+                "1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 155,
+            "g": 155,
+            "r": 155,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "deck changing"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 226,
+            "g": 144,
+            "r": 74,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "changing between decks"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "spadesDeckActive",
+                "\"LControl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "heartsDeckActive",
+                "Toggle",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "spadesDeckActive",
+                "Toggle",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 226,
+            "g": 144,
+            "r": 74,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "decks active/inactive animation"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "heartsDeckActive",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heartsDeck",
+                "Animation",
+                "=",
+                "\"active\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heartsDeck",
+                "Animation",
+                "=",
+                "\"inactive\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "spadesDeckActive",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "spadesDeck",
+                "Animation",
+                "=",
+                "\"active\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "spadesDeck",
+                "Animation",
+                "=",
+                "\"inactive\""
               ]
             }
           ]
@@ -3071,6 +3622,60 @@
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
+          "cameraType": "perspective",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "background",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
@@ -3318,7 +3923,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.7619362677197598,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
