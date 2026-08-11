@@ -437,6 +437,7 @@
       "variables": [
         {
           "name": "playerStamina",
+          "persistentUuid": "d378e0a2-5976-452a-85de-2392f0a6bb64",
           "type": "number",
           "value": 15
         }
@@ -2655,7 +2656,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6244537826600047,
+        "zoomFactor": 0.929687500000009,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2714,8 +2715,8 @@
           "persistentUuid": "dabc32e0-6479-429e-bcb1-9471d53881d3",
           "width": 0,
           "x": 550,
-          "y": 519,
-          "zOrder": 3,
+          "y": 520,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2959,6 +2960,22 @@
           "x": 25,
           "y": 29,
           "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "controlsText",
+          "persistentUuid": "68edaa56-f0bf-4810-9548-ee617b6087f3",
+          "width": 0,
+          "x": 612,
+          "y": 437,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3338,6 +3355,50 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "controlsText",
+          "persistentUuid": "e9213685-7495-43c5-a4c6-70ebd811cf0d",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "left = a\nright = d\njump = space",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "left = a\nright = d\njump = space",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -3360,6 +3421,9 @@
           },
           {
             "objectName": "tutorialShowEnter"
+          },
+          {
+            "objectName": "controlsText"
           }
         ]
       },
@@ -3451,20 +3515,35 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::SimulateJumpKey"
-              },
-              "parameters": [
-                "player",
-                "PlatformerObject"
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsOnFloor"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateJumpKey"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
               "conditions": [
                 {
                   "type": {
@@ -3485,19 +3564,18 @@
                     "",
                     "\"Space\""
                   ]
-                },
+                }
+              ],
+              "actions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "PlatformBehavior::IsOnFloor"
+                    "value": "PlatformBehavior::SimulateJumpKey"
                   },
                   "parameters": [
                     "player",
                     "PlatformerObject"
                   ]
-                }
-              ],
-              "actions": [
+                },
                 {
                   "type": {
                     "value": "SetNumberObjectVariable"
@@ -3507,15 +3585,6 @@
                     "playerStamina",
                     "-",
                     "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateJumpKey"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject"
                   ]
                 }
               ]
@@ -3909,7 +3978,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "1"
               ]
             },
             {
@@ -4188,6 +4257,35 @@
             "textR": 0
           },
           "comment": "Going to different areas"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "player",
+                ">=",
+                "1000"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "550",
+                "=",
+                "520"
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -4586,15 +4684,15 @@
       ]
     },
     {
-      "b": 255,
+      "b": 233,
       "disableInputWhenNotFocused": true,
       "mangledName": "Tutorial",
       "name": "Tutorial",
-      "r": 247,
+      "r": 142,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 249,
+      "v": 165,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -4607,14 +4705,65 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7619362677197598,
+        "zoomFactor": 0.43357743047023733,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 56,
+          "keepRatio": true,
+          "layer": "",
+          "name": "grassBlock",
+          "persistentUuid": "c2b0cac3-c486-4d2a-b269-2779803bdc51",
+          "width": 1384,
+          "x": -49,
+          "y": 579,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 285,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "79e9ffe1-5368-41fa-a4fa-1b8716b3f0c3",
+          "width": 1384,
+          "x": -51,
+          "y": 620,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "player",
+          "persistentUuid": "9cfedb3a-4263-4df3-9657-d12e3b5b25b2",
+          "width": 0,
+          "x": 583,
+          "y": 484,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
