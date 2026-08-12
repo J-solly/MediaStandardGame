@@ -3538,7 +3538,24 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"e\""
+                  ]
+                }
+              ],
+              "actions": []
+            }
+          ]
         }
       ],
       "layers": [
