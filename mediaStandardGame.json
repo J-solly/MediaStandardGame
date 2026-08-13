@@ -463,6 +463,24 @@
         "name": "target",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "mediaBgSong.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "mediaBgSong.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -3445,10 +3463,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "Jumpthru",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
               "yGrabOffset": 0
             }
           ],
@@ -4187,7 +4205,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5468750000000019,
+        "zoomFactor": 0.44819780454104224,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4204,7 +4222,7 @@
           "layer": "",
           "name": "grassBlock",
           "persistentUuid": "c2b0cac3-c486-4d2a-b269-2779803bdc51",
-          "width": 3831,
+          "width": 2399,
           "x": -49,
           "y": 579,
           "zOrder": 1,
@@ -4436,7 +4454,7 @@
           "name": "basicControlsText",
           "persistentUuid": "a10cf5f7-a508-4dee-971b-6205e9627ad0",
           "width": 0,
-          "x": 1078,
+          "x": 926,
           "y": 375,
           "zOrder": 21,
           "numberProperties": [],
@@ -4455,6 +4473,261 @@
           "x": 1720,
           "y": 416,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 23,
+          "keepRatio": true,
+          "layer": "",
+          "name": "blackDeckShootText",
+          "persistentUuid": "9e327fce-de5b-4f81-817e-9e8ea76415ad",
+          "width": 274,
+          "x": 1474,
+          "y": 417,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 9333,
+          "keepRatio": true,
+          "layer": "",
+          "name": "targetShotBarrier",
+          "opacity": 0,
+          "persistentUuid": "2a95b073-96b9-4d73-9d96-135188c96509",
+          "width": 32,
+          "x": 1880,
+          "y": -2252,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 23,
+          "keepRatio": true,
+          "layer": "",
+          "name": "hitTargetPleaseText",
+          "persistentUuid": "3b06dd6d-18ea-4159-b52b-62ab41745d15",
+          "width": 242,
+          "x": 1843,
+          "y": 368,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 317,
+          "customSize": true,
+          "depth": 1,
+          "height": 62,
+          "keepRatio": true,
+          "layer": "",
+          "name": "grassBlock",
+          "persistentUuid": "8455e4e1-6630-4161-a554-7d38ef2eea7b",
+          "width": 632,
+          "x": 2235,
+          "y": 358,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 269,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "9973f418-3e99-41d8-b01c-d1da7a88417d",
+          "width": 237,
+          "x": 2564,
+          "y": 376,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 427,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "e4ac37bc-efa3-432e-b6d0-c301ad9e92a8",
+          "width": 364,
+          "x": 2767,
+          "y": 199,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 88,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "1b1d61f9-a213-4ed3-8d38-045bf4d645c8",
+          "width": 108,
+          "x": 2662,
+          "y": 294,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 63,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "5a5b27d3-1058-4505-bd17-970e7d18d026",
+          "width": 70,
+          "x": 2700,
+          "y": 233,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 51,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "210e3054-2c3e-4345-bfe5-307d26b6ead1",
+          "width": 83,
+          "x": 2608,
+          "y": 329,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 124,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "45585f3c-6a2a-473b-b13f-11aa9d62322b",
+          "width": 143,
+          "x": 2422,
+          "y": 499,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 55,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "4745b389-4b3e-47c3-9abc-61c80740b89a",
+          "width": 168,
+          "x": 2480,
+          "y": 453,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 41,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "552aa6f2-9d97-4495-bcc9-a130bc0a9e0d",
+          "width": 66,
+          "x": 2512,
+          "y": 414,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "35e50d51-b6d5-4ea9-b3c2-7131ddac9b4d",
+          "width": 79,
+          "x": 2349,
+          "y": 556,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "98da689c-5ce0-46a1-9b80-4c44bb95e4b2",
+          "width": 0,
+          "x": 2407,
+          "y": 542,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 55,
+          "keepRatio": true,
+          "layer": "",
+          "name": "grassBlock",
+          "persistentUuid": "ccc1c750-67a3-46c3-8cd8-a1cf3f48f260",
+          "width": 370,
+          "x": 2761,
+          "y": 151,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4560,10 +4833,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -4634,11 +4907,148 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "blackDeckShootText",
+          "persistentUuid": "abf6c04d-fe63-4476-a234-34b4f244740e",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Try switching to your black deck to hit the target, IIn order to continue on",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Try switching to your black deck to hit the target, IIn order to continue on",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "targetShotBarrier",
+          "persistentUuid": "cd06462d-bc50-44df-86a5-236a88c2c9ae",
+          "texture": "NewTiledSprite",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "hitTargetPleaseText",
+          "persistentUuid": "b95c57da-5b41-4770-9eda-903a32c7450a",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Please hit the target in order to continue",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Please hit the target in order to continue",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "NewTiledSprite",
+          "persistentUuid": "fc8514ea-c8b7-42c2-a6d5-ae788d102bad",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "folderName": "target shooting",
+            "children": [
+              {
+                "objectName": "blackDeckShootText"
+              },
+              {
+                "objectName": "hitTargetPleaseText"
+              },
+              {
+                "objectName": "target"
+              },
+              {
+                "objectName": "targetShotBarrier"
+              }
+            ]
+          },
           {
             "objectName": "welcomeText"
           },
@@ -4646,7 +5056,7 @@
             "objectName": "basicControlsText"
           },
           {
-            "objectName": "target"
+            "objectName": "NewTiledSprite"
           }
         ]
       },
@@ -4660,8 +5070,82 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "cardBullet",
+                "target",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "cardBullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "targetShotBarrier",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "targetShotBarrier",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "hitTargetPleaseText",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "hitTargetPleaseText"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -5643,6 +6127,16 @@
                 "",
                 "\"p\""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "spadesDeckActive",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [],
@@ -5669,8 +6163,8 @@
                   "parameters": [
                     "player",
                     "FireBullet",
-                    "player.CenterX()",
-                    "player.CenterY()",
+                    "player.CenterX()-30",
+                    "player.CenterY()-10",
                     "cardBullet",
                     "180",
                     "500",
@@ -5702,7 +6196,7 @@
                     "player",
                     "FireBullet",
                     "player.CenterX()",
-                    "player.CenterY()",
+                    "player.CenterY()-10",
                     "cardBullet",
                     "0",
                     "500",
@@ -5723,6 +6217,16 @@
               "parameters": [
                 "",
                 "\"q\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "spadesDeckActive",
+                "True",
+                ""
               ]
             }
           ],
@@ -6117,6 +6621,18 @@
                 "",
                 "yes",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "mediaBgSong.mp3",
+                "yes",
+                "100",
+                "1"
               ]
             }
           ]
