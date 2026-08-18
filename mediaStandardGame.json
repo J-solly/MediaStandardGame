@@ -481,6 +481,30 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "spikeMedia.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spikeMedia.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "respawnMedia.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "respawnMedia.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1516,6 +1540,45 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "spike",
+      "persistentUuid": "421b029b-3594-4f22-b5d7-f8d72f1a348d",
+      "texture": "spikeMedia.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "platformJumpthru",
+      "texture": "NewTiledSprite2",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "Jumpthru",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1574,6 +1637,12 @@
       },
       {
         "objectName": "player"
+      },
+      {
+        "objectName": "spike"
+      },
+      {
+        "objectName": "platformJumpthru"
       },
       {
         "objectName": "cardBullet"
@@ -4205,7 +4274,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.44819780454104224,
+        "zoomFactor": 0.7370816317994164,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4239,7 +4308,7 @@
           "layer": "",
           "name": "dirtBlock",
           "persistentUuid": "79e9ffe1-5368-41fa-a4fa-1b8716b3f0c3",
-          "width": 3833,
+          "width": 4057,
           "x": -51,
           "y": 620,
           "zOrder": 2,
@@ -4731,6 +4800,108 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 101,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike",
+          "persistentUuid": "8cba5708-d39e-44da-9d84-7a7108a21898",
+          "width": 802,
+          "x": 3131,
+          "y": 161,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 429,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "5be47b2f-a377-4871-a344-beeee500334a",
+          "width": 864,
+          "x": 3084,
+          "y": 259,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "grassBlock",
+          "persistentUuid": "578842ce-b3f5-4c8a-aed0-336babf2fc29",
+          "width": 1552,
+          "x": 3937,
+          "y": 167,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 718,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dirtBlock",
+          "persistentUuid": "6b974fb0-8e07-4346-a688-14ac52e1cc85",
+          "width": 1010,
+          "x": 3940,
+          "y": 219,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "platformJumpthru",
+          "persistentUuid": "1c01b3ae-a2e1-4692-ad09-8ccaa5c9f8d4",
+          "width": 325,
+          "x": 3579,
+          "y": 35,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 125,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RespawnPoint",
+          "persistentUuid": "7f9aa61a-616f-4610-ae83-2074965bf44f",
+          "width": 125,
+          "x": 2902,
+          "y": 25,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -4964,10 +5135,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -5017,16 +5188,65 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "height": 32,
-          "name": "NewTiledSprite",
-          "persistentUuid": "fc8514ea-c8b7-42c2-a6d5-ae788d102bad",
-          "texture": "",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
+          "name": "RespawnPoint",
+          "persistentUuid": "7ac14110-1319-4ecd-8d8d-b047a4c7910b",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": []
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "respawnMedia.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 15
+                          },
+                          {
+                            "x": 64,
+                            "y": 15
+                          },
+                          {
+                            "x": 64,
+                            "y": 75
+                          },
+                          {
+                            "x": 11,
+                            "y": 75
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -5056,7 +5276,7 @@
             "objectName": "basicControlsText"
           },
           {
-            "objectName": "NewTiledSprite"
+            "objectName": "RespawnPoint"
           }
         ]
       },
@@ -6096,6 +6316,56 @@
             {
               "type": {
                 "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"w\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateUpKey"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"s\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateDownKey"
               },
               "parameters": [
                 "player",
