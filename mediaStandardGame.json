@@ -505,6 +505,14 @@
         "name": "respawnMedia.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "deactivatedCheckpointMedia.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "deactivatedCheckpointMedia.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1553,10 +1561,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ]
@@ -1572,11 +1580,248 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "Jumpthru",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "Jumpthru",
           "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "RespawnPoint",
+      "persistentUuid": "7ac14110-1319-4ecd-8d8d-b047a4c7910b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "inactive",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "deactivatedCheckpointMedia.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 35.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 50.5,
+                        "y": 35
+                      },
+                      {
+                        "x": 43,
+                        "y": 49.5
+                      },
+                      {
+                        "x": 37,
+                        "y": 58
+                      }
+                    ],
+                    [
+                      {
+                        "x": 42.5,
+                        "y": 48.5
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 50.5
+                      },
+                      {
+                        "x": 49,
+                        "y": 56
+                      },
+                      {
+                        "x": 43,
+                        "y": 58
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 58
+                      },
+                      {
+                        "x": 26,
+                        "y": 55
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 51
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 48.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 20,
+                        "y": 67.5
+                      },
+                      {
+                        "x": 32,
+                        "y": 63.5
+                      },
+                      {
+                        "x": 43,
+                        "y": 63.5
+                      },
+                      {
+                        "x": 54.5,
+                        "y": 67.5
+                      },
+                      {
+                        "x": 64.5,
+                        "y": 75
+                      },
+                      {
+                        "x": 10.5,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "active",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "respawnMedia.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 35.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 50.5,
+                        "y": 35
+                      },
+                      {
+                        "x": 43,
+                        "y": 49.5
+                      },
+                      {
+                        "x": 37,
+                        "y": 58
+                      }
+                    ],
+                    [
+                      {
+                        "x": 42.5,
+                        "y": 48.5
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 50.5
+                      },
+                      {
+                        "x": 49,
+                        "y": 56
+                      },
+                      {
+                        "x": 43,
+                        "y": 58
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 58
+                      },
+                      {
+                        "x": 26,
+                        "y": 55
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 51
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 48.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 20,
+                        "y": 67.5
+                      },
+                      {
+                        "x": 32,
+                        "y": 63.5
+                      },
+                      {
+                        "x": 43,
+                        "y": 63.5
+                      },
+                      {
+                        "x": 54.5,
+                        "y": 67.5
+                      },
+                      {
+                        "x": 64.5,
+                        "y": 75
+                      },
+                      {
+                        "x": 10.5,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -1645,6 +1890,9 @@
         "objectName": "platformJumpthru"
       },
       {
+        "objectName": "RespawnPoint"
+      },
+      {
         "objectName": "cardBullet"
       }
     ]
@@ -1671,8 +1919,19 @@
     },
     {
       "name": "lastKeyPressed",
+      "persistentUuid": "522dfec4-0a5c-4966-baf8-7e16d07fa8eb",
       "type": "string",
       "value": "right"
+    },
+    {
+      "name": "playerRespawnX",
+      "type": "number",
+      "value": 550
+    },
+    {
+      "name": "playerRespawnY",
+      "type": "number",
+      "value": 510
     }
   ],
   "layouts": [
@@ -3027,7 +3286,13 @@
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "player",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -4274,7 +4539,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994164,
+        "zoomFactor": 0.8141881203710079,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4325,8 +4590,8 @@
           "name": "player",
           "persistentUuid": "c31d9d1d-de5d-437e-a385-6ffa2b7ce500",
           "width": 0,
-          "x": 723,
-          "y": 496,
+          "x": 550,
+          "y": 510,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -4897,8 +5162,58 @@
           "persistentUuid": "7f9aa61a-616f-4610-ae83-2074965bf44f",
           "width": 125,
           "x": 2902,
-          "y": 25,
+          "y": 26,
           "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 23,
+          "keepRatio": true,
+          "layer": "",
+          "name": "checkpointText",
+          "persistentUuid": "432d28ba-55fc-4e0a-b79a-45c5603ff5ec",
+          "width": 338,
+          "x": 2557,
+          "y": -22,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 69,
+          "keepRatio": true,
+          "layer": "",
+          "name": "gapText",
+          "persistentUuid": "7ab16c2b-6b44-4bf9-a9cb-54ee6f7b65f8",
+          "width": 518,
+          "x": 3046,
+          "y": -107,
+          "zOrder": 45,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "dashDjControlsText",
+          "persistentUuid": "476bb806-4107-47ce-929f-b93ddd8b9473",
+          "width": 0,
+          "x": 3100,
+          "y": 47,
+          "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4961,7 +5276,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump",
+          "string": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump\n- LCtrl = changing decks",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -4984,7 +5299,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump",
+            "text": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump\n- LCtrl = changing decks",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -5188,65 +5503,136 @@
           }
         },
         {
-          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "RespawnPoint",
-          "persistentUuid": "7ac14110-1319-4ecd-8d8d-b047a4c7910b",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "bold": true,
+          "italic": true,
+          "name": "checkpointText",
+          "persistentUuid": "7cab579b-b5b5-4426-b988-3f66ff43819c",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "respawnMedia.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 11,
-                            "y": 15
-                          },
-                          {
-                            "x": 64,
-                            "y": 15
-                          },
-                          {
-                            "x": 64,
-                            "y": 75
-                          },
-                          {
-                            "x": 11,
-                            "y": 75
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "string": "This is a checkpoint, it will activate on collision, making you respawn here",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "This is a checkpoint, it will activate on collision, making you respawn here",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "gapText",
+          "persistentUuid": "8c2bb733-4a8f-4246-9584-6c96b09814ec",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "You cannot cross this gap without movement abilities\n\nTry switching to your hearts deck to use the dash and double jump",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "You cannot cross this gap without movement abilities\n\nTry switching to your hearts deck to use the dash and double jump",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "dashDjControlsText",
+          "persistentUuid": "7f1817e5-efcd-402a-869f-3082beb9a4fc",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "keybinds for dash and double jump:\n- Lshift = dash\n- pressing space while in the air = double jump ",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "keybinds for dash and double jump:\n- Lshift = dash\n- pressing space while in the air = double jump ",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -5276,7 +5662,13 @@
             "objectName": "basicControlsText"
           },
           {
-            "objectName": "RespawnPoint"
+            "objectName": "checkpointText"
+          },
+          {
+            "objectName": "gapText"
+          },
+          {
+            "objectName": "dashDjControlsText"
           }
         ]
       },
@@ -5363,6 +5755,87 @@
               },
               "parameters": [
                 "hitTargetPleaseText"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "RespawnPoint",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RespawnPoint",
+                "Animation",
+                "=",
+                "\"active\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "playerRespawnX",
+                "=",
+                "2960"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "playerRespawnY",
+                "=",
+                "25"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "spike",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "playerRespawnX",
+                "=",
+                "playerRespawnY"
               ]
             }
           ]
@@ -7287,9 +7760,9 @@
               "parameters": [
                 "player",
                 "=",
-                "550",
+                "playerRespawnX",
                 "=",
-                "520"
+                "playerRespawnY"
               ]
             }
           ]
