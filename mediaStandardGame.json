@@ -513,6 +513,54 @@
         "name": "deactivatedCheckpointMedia.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "ghostIdleMediaRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ghostIdleMediaRight.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "ghostIdleMediaLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ghostIdleMediaLeft.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../../../../Downloads/ghostIdleMediaLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../../../../Downloads/ghostIdleMediaLeft.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "ghostChaseMediaRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ghostChaseMediaRight.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "ghostChaseMediaLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ghostChaseMediaLeft.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1573,6 +1621,7 @@
       "assetStoreId": "",
       "height": 32,
       "name": "platformJumpthru",
+      "persistentUuid": "d19a76af-505d-48f6-b25d-ba87b02e6af1",
       "texture": "NewTiledSprite2",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
@@ -1824,6 +1873,318 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ghostEnemy",
+      "persistentUuid": "115d124a-907b-4ee6-a2c1-0336fd41095c",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "lastDirection",
+          "persistentUuid": "25b11938-1a66-4451-b649-5793ca0cedab",
+          "type": "string",
+          "value": "left"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
+          "acceleration": 1500,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": true,
+          "deceleration": 1500,
+          "gravity": 1000,
+          "ignoreDefaultControls": true,
+          "jumpSpeed": 600,
+          "jumpSustainTime": 0.2,
+          "ladderClimbingSpeed": 150,
+          "maxFallingSpeed": 700,
+          "maxSpeed": 250,
+          "name": "PlatformerObject",
+          "slopeMaxAngle": 60,
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "useLegacyTrajectory": false,
+          "useRepeatedJump": false,
+          "xGrabTolerance": 10,
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "idleRight",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ghostIdleMediaRight.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 97
+                      },
+                      {
+                        "x": 28,
+                        "y": 97
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "idleLeft",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "../../../../Downloads/ghostIdleMediaLeft.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 97
+                      },
+                      {
+                        "x": 28,
+                        "y": 97
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chaseRight",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ghostChaseMediaRight.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 97
+                      },
+                      {
+                        "x": 28,
+                        "y": 97
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chaseLeft",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ghostChaseMediaLeft.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 2
+                      },
+                      {
+                        "x": 72,
+                        "y": 97
+                      },
+                      {
+                        "x": 28,
+                        "y": 97
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "enemydetection",
+      "persistentUuid": "a391377f-623d-4c91-8f68-a390355a5dd7",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1894,6 +2255,12 @@
       },
       {
         "objectName": "cardBullet"
+      },
+      {
+        "objectName": "ghostEnemy"
+      },
+      {
+        "objectName": "enemydetection"
       }
     ]
   },
@@ -3225,6 +3592,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -3289,6 +3660,7 @@
       "variables": [
         {
           "name": "player",
+          "persistentUuid": "7d703656-10d7-4fc8-93e9-0f6eb6e14ef0",
           "type": "number",
           "value": 0
         }
@@ -4484,6 +4856,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -4539,7 +4915,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8141881203710079,
+        "zoomFactor": 0.3925161175488304,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -5126,7 +5502,7 @@
           "layer": "",
           "name": "dirtBlock",
           "persistentUuid": "6b974fb0-8e07-4346-a688-14ac52e1cc85",
-          "width": 1010,
+          "width": 1546,
           "x": 3940,
           "y": 219,
           "zOrder": 41,
@@ -5138,7 +5514,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 32,
+          "height": 22,
           "keepRatio": true,
           "layer": "",
           "name": "platformJumpthru",
@@ -5217,6 +5593,41 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ghostEnemy",
+          "opacity": 102,
+          "persistentUuid": "1363a863-5911-4aaf-920c-3f69e39a2f52",
+          "width": 0,
+          "x": 4576,
+          "y": 48,
+          "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 11,
+          "height": 686,
+          "keepRatio": true,
+          "layer": "",
+          "name": "enemydetection",
+          "opacity": 0,
+          "persistentUuid": "8234876d-2c72-443a-846e-4878d0cb1613",
+          "width": 686,
+          "x": 4274,
+          "y": -248,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -5276,7 +5687,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump\n- LCtrl = changing decks",
+          "string": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump\n- LCtrl = changing decks\n- p = primary fire(when on spades deck)",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -5299,7 +5710,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump\n- LCtrl = changing decks",
+            "text": "Your basic conrols for the player are:\n- a = left\n- d = right\n- space = jump\n- LCtrl = changing decks\n- p = primary fire(when on spades deck)",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -5406,7 +5817,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Try switching to your black deck to hit the target, IIn order to continue on",
+          "string": "Try switching to your spades deck to hit the target, IIn order to continue on",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -5429,7 +5840,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Try switching to your black deck to hit the target, IIn order to continue on",
+            "text": "Try switching to your spades deck to hit the target, IIn order to continue on",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -5839,6 +6250,214 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "enemydetection",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "ghostEnemy",
+                "Pathfinding",
+                "",
+                "player.X()",
+                "player.Y()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    "<",
+                    "ghostEnemy.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "Animation",
+                    "=",
+                    "\"chaseLeft\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "lastDirection",
+                    "=",
+                    "\"left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    ">",
+                    "ghostEnemy.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "Animation",
+                    "=",
+                    "\"chaseRight\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "lastDirection",
+                    "=",
+                    "\"right\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "enemydetection",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "lastDirection",
+                    "=",
+                    "\"left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "Animation",
+                    "=",
+                    "\"idleLeft\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "lastDirection",
+                    "=",
+                    "\"right\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "ghostEnemy",
+                    "Animation",
+                    "=",
+                    "\"idleRight\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "enemydetection",
+                "=",
+                "ghostEnemy.X()",
+                "=",
+                "ghostEnemy.Y()"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -6054,6 +6673,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -6235,6 +6858,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -6404,6 +7031,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -6571,6 +7202,10 @@
         {
           "name": "Opacity",
           "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
         },
         {
           "name": "Platform",
