@@ -485,7 +485,7 @@
       {
         "file": "spikeMedia.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"spikeMedia.png\",\"extension\":\".png\"}",
         "name": "spikeMedia.png",
         "smoothed": true,
         "userAdded": false
@@ -585,6 +585,22 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
           "name": "Flat Bar White Border.png"
         }
+      },
+      {
+        "file": "assets/NewTiledSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "spikeMedia2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spikeMedia2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1626,20 +1642,12 @@
       "height": 32,
       "name": "spike",
       "persistentUuid": "421b029b-3594-4f22-b5d7-f8d72f1a348d",
-      "texture": "spikeMedia.png",
+      "texture": "spikeMedia2.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": true,
-          "platformType": "NormalPlatform",
-          "yGrabOffset": 0
-        }
-      ]
+      "behaviors": []
     },
     {
       "assetStoreId": "",
@@ -2237,6 +2245,129 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "tutorialPortal",
+      "persistentUuid": "f4ecc041-65d3-48e6-8134-c58dc0b809e9",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "tutorialPortalMedia",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tutorialPortalMedia2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 27,
+                        "y": 17
+                      },
+                      {
+                        "x": 129,
+                        "y": 17
+                      },
+                      {
+                        "x": 129,
+                        "y": 150
+                      },
+                      {
+                        "x": 27,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "tutorialShowEnter",
+      "persistentUuid": "d45f7b95-c6da-4c2d-a45d-e4c3b8effa31",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Screenshot_2026-02-04_120757-removebg-preview (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 12
+                      },
+                      {
+                        "x": 264,
+                        "y": 12
+                      },
+                      {
+                        "x": 264,
+                        "y": 162
+                      },
+                      {
+                        "x": 29,
+                        "y": 162
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2313,6 +2444,12 @@
       },
       {
         "objectName": "enemydetection"
+      },
+      {
+        "objectName": "tutorialPortal"
+      },
+      {
+        "objectName": "tutorialShowEnter"
       }
     ]
   },
@@ -3703,7 +3840,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210244,
+        "zoomFactor": 2.7773965524835917,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4296,68 +4433,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "tutorialPortal",
-          "persistentUuid": "f4ecc041-65d3-48e6-8134-c58dc0b809e9",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "tutorialPortalMedia",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "tutorialPortalMedia2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 27,
-                            "y": 17
-                          },
-                          {
-                            "x": 129,
-                            "y": 17
-                          },
-                          {
-                            "x": 129,
-                            "y": 150
-                          },
-                          {
-                            "x": 27,
-                            "y": 150
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "assetStoreId": "",
           "bold": true,
           "italic": true,
@@ -4400,67 +4475,6 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "tutorialShowEnter",
-          "persistentUuid": "d45f7b95-c6da-4c2d-a45d-e4c3b8effa31",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Screenshot_2026-02-04_120757-removebg-preview (1).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 29,
-                            "y": 12
-                          },
-                          {
-                            "x": 264,
-                            "y": 12
-                          },
-                          {
-                            "x": 264,
-                            "y": 162
-                          },
-                          {
-                            "x": 29,
-                            "y": 162
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "assetStoreId": "",
@@ -4520,13 +4534,7 @@
             "objectName": "tree"
           },
           {
-            "objectName": "tutorialPortal"
-          },
-          {
             "objectName": "tutorialText"
-          },
-          {
-            "objectName": "tutorialShowEnter"
           },
           {
             "objectName": "controlsText"
@@ -4967,7 +4975,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.0269425874981326,
+        "zoomFactor": 0.7876290101674075,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -5537,7 +5545,7 @@
           "layer": "",
           "name": "grassBlock",
           "persistentUuid": "578842ce-b3f5-4c8a-aed0-336babf2fc29",
-          "width": 3250,
+          "width": 3792,
           "x": 3937,
           "y": 167,
           "zOrder": 40,
@@ -5554,7 +5562,7 @@
           "layer": "",
           "name": "dirtBlock",
           "persistentUuid": "6b974fb0-8e07-4346-a688-14ac52e1cc85",
-          "width": 3291,
+          "width": 3789,
           "x": 3940,
           "y": 219,
           "zOrder": 41,
@@ -5639,8 +5647,8 @@
           "name": "dashDjControlsText",
           "persistentUuid": "476bb806-4107-47ce-929f-b93ddd8b9473",
           "width": 0,
-          "x": 3100,
-          "y": 47,
+          "x": 3047,
+          "y": -37,
           "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
@@ -5691,7 +5699,7 @@
           "name": "enemyExplainText",
           "persistentUuid": "5a2100ce-e8a3-4c9f-8189-1f6aa50ed581",
           "width": 455,
-          "x": 3975,
+          "x": 3991,
           "y": -48,
           "zOrder": 49,
           "numberProperties": [],
@@ -5707,8 +5715,8 @@
           "name": "enemyExplainText2",
           "persistentUuid": "c8fb41c5-52e1-4e2b-ad7f-57fe33ef40a2",
           "width": 0,
-          "x": 4249,
-          "y": 1,
+          "x": 4013,
+          "y": 73,
           "zOrder": 52,
           "numberProperties": [],
           "stringProperties": [],
@@ -5723,8 +5731,8 @@
           "name": "enemyExplainText3",
           "persistentUuid": "478f7fe7-c9da-478c-b55c-9dfdeed84ba4",
           "width": 0,
-          "x": 4746,
-          "y": -33,
+          "x": 4533,
+          "y": 12,
           "zOrder": 53,
           "numberProperties": [],
           "stringProperties": [],
@@ -5743,6 +5751,192 @@
           "x": 5158,
           "y": 20,
           "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tutorialPortal",
+          "persistentUuid": "a2b9c65f-5645-4041-9fa7-d68d8addc1e3",
+          "width": 0,
+          "x": 7240,
+          "y": 17,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 3646,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tutorialExitBarrier",
+          "persistentUuid": "116e5a67-b06a-4e84-a139-2f8415ea3f4c",
+          "width": 32,
+          "x": 7729,
+          "y": -1010,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 43.909090909090914,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tutorialShowEnter",
+          "persistentUuid": "cdcae2d9-553d-437a-b43a-f237f54d3f52",
+          "width": 69,
+          "x": 7313,
+          "y": 82,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "df516090-1b37-4b1a-a7a2-8c6cde13dc05",
+          "width": 0,
+          "x": 3131,
+          "y": 161,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "65612b98-851f-4ba2-a132-2d6884df2ddc",
+          "width": 0,
+          "x": 3231,
+          "y": 160,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "4814bd8f-9f3f-4408-bb9a-9ac8938af1f4",
+          "width": 0,
+          "x": 3332,
+          "y": 161,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "f9c772b8-1b13-4601-aee7-a48ea0aca46a",
+          "width": 0,
+          "x": 3433,
+          "y": 161,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "b04a1b4d-8d6d-455f-9ca8-ae06a929008f",
+          "width": 0,
+          "x": 3531,
+          "y": 160,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "e7bad2fc-e6e0-4acb-80cd-97c4b57faf24",
+          "width": 0,
+          "x": 3629,
+          "y": 161,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "8a78f94b-55b3-4c50-b0e2-674bac015b5a",
+          "width": 0,
+          "x": 3733,
+          "y": 159,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "spike_hitbox",
+          "opacity": 0,
+          "persistentUuid": "7afb1c66-864e-4262-8c7e-b9e106e8d439",
+          "width": 0,
+          "x": 3832,
+          "y": 162,
+          "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5935,7 +6129,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Try switching to your spades deck to hit the target, IIn order to continue on",
+          "string": "Try switching to your spades deck to hit the target",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -5958,7 +6152,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Try switching to your spades deck to hit the target, IIn order to continue on",
+            "text": "Try switching to your spades deck to hit the target",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -6087,7 +6281,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "You cannot cross this gap without movement abilities\n\nTry switching to your hearts deck to use the dash and double jump",
+          "string": "switch to your hearts deck to use the dash and double jump",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -6110,7 +6304,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "You cannot cross this gap without movement abilities\n\nTry switching to your hearts deck to use the dash and double jump",
+            "text": "switch to your hearts deck to use the dash and double jump",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -6219,7 +6413,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "It will damage you in collision with it, so try to kill it before it can kill you",
+          "string": "It will damage you in collision with it",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -6242,7 +6436,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "It will damage you in collision with it, so try to kill it before it can kill you",
+            "text": "It will damage you in collision with it",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -6263,7 +6457,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Try switching to your blakc deck and use your abilities",
+          "string": "Try using the spades deck",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -6286,7 +6480,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Try switching to your blakc deck and use your abilities",
+            "text": "Try using the spades deck",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -6314,6 +6508,95 @@
             "MaxValue": 16,
             "InitialValue": 8
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewResourceBar",
+          "persistentUuid": "7fe6eb42-60e9-4aa2-9caa-1c478271d534",
+          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+          "variant": "custom",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "tutorialExitBarrier",
+          "persistentUuid": "d99235a8-29d2-48f1-a4e5-bb061cc408a2",
+          "texture": "NewTiledSprite3",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "spike_hitbox",
+          "persistentUuid": "2923358e-fcbb-4d32-aa5d-e36ad40797a9",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spikeMedia.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 49.5,
+                            "y": 4.5
+                          },
+                          {
+                            "x": 100,
+                            "y": 100
+                          },
+                          {
+                            "x": 0,
+                            "y": 100
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6335,6 +6618,9 @@
                 "objectName": "targetShotBarrier"
               }
             ]
+          },
+          {
+            "objectName": "tutorialExitBarrier"
           },
           {
             "objectName": "welcomeText"
@@ -6362,6 +6648,12 @@
           },
           {
             "objectName": "RedFlatBar"
+          },
+          {
+            "objectName": "NewResourceBar"
+          },
+          {
+            "objectName": "spike_hitbox"
           }
         ]
       },
@@ -6511,7 +6803,7 @@
               },
               "parameters": [
                 "player",
-                "spike",
+                "spike_hitbox",
                 "",
                 "",
                 ""
@@ -6529,6 +6821,19 @@
                 "playerRespawnX",
                 "=",
                 "playerRespawnY"
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "3",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -6925,6 +7230,121 @@
                 "",
                 "",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "player",
+                ">=",
+                "7053"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "tutorialPortal",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "tutorialShowEnter",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"e\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"home area\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "tutorialShowEnter"
               ]
             }
           ]
@@ -8481,6 +8901,16 @@
                 "yes",
                 "100",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "pauseActive",
+                "False",
+                ""
               ]
             }
           ]
@@ -31500,6 +31930,334 @@
           },
           "variants": [
             {
+              "areaMaxX": 256,
+              "areaMaxY": 64,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "name": "custom",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": false,
+                  "italic": false,
+                  "name": "Label",
+                  "persistentUuid": "0cffb9c7-ac01-4b14-91ba-0de5fa70d02c",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ],
+                  "string": "2 / 3",
+                  "font": "",
+                  "textAlignment": "center",
+                  "characterSize": 20,
+                  "color": {
+                    "b": 0,
+                    "g": 0,
+                    "r": 0
+                  },
+                  "content": {
+                    "bold": false,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": false,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "2 / 3",
+                    "font": "",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 20,
+                    "lineHeight": 0,
+                    "color": "0;0;0"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 32,
+                  "leftMargin": 0,
+                  "name": "FillBar",
+                  "persistentUuid": "4b66a2bf-092e-4eae-a683-d95ecc8b5025",
+                  "rightMargin": 0,
+                  "texture": "",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ResourceBar",
+                      "type": "PanelSpriteContinuousBar::ResourceBar",
+                      "Value": 1,
+                      "MaxValue": 3,
+                      "PreviousValue": 0,
+                      "CurrentValue": 1
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 32,
+                  "leftMargin": 0,
+                  "name": "Buffer",
+                  "persistentUuid": "a19c37ec-f2a0-4b6f-a78a-190c01fc6e5f",
+                  "rightMargin": 0,
+                  "texture": "",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 32,
+                  "leftMargin": 0,
+                  "name": "Background",
+                  "persistentUuid": "3b8e691f-11e9-448c-a94c-0e438f96958d",
+                  "rightMargin": 0,
+                  "texture": "",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "name": "BitmapLabel",
+                  "persistentUuid": "a5ef1543-49f0-4216-9dfb-59e708431536",
+                  "type": "BitmapText::BitmapTextObject",
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ],
+                  "content": {
+                    "text": "100",
+                    "opacity": 255,
+                    "scale": 1,
+                    "fontSize": 20,
+                    "tint": "221;221;221",
+                    "bitmapFontResourceName": "",
+                    "textureAtlasResourceName": "",
+                    "align": "center",
+                    "verticalTextAlignment": "center"
+                  }
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Label"
+                  },
+                  {
+                    "objectName": "BitmapLabel"
+                  },
+                  {
+                    "objectName": "FillBar"
+                  },
+                  {
+                    "objectName": "Buffer"
+                  },
+                  {
+                    "objectName": "Background"
+                  }
+                ]
+              },
+              "objectsGroups": [
+                {
+                  "name": "Labels",
+                  "objects": [
+                    {
+                      "name": "Label"
+                    },
+                    {
+                      "name": "BitmapLabel"
+                    }
+                  ]
+                }
+              ],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera2DPlaneMaxDrawingDistance": 5000,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 0,
+                  "height": 64,
+                  "layer": "",
+                  "name": "Background",
+                  "persistentUuid": "fa2b0c42-1baa-489d-9c47-87ec233cbe8c",
+                  "width": 256,
+                  "x": 0,
+                  "y": 0,
+                  "zOrder": 1,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 44,
+                  "layer": "",
+                  "name": "Buffer",
+                  "persistentUuid": "6e01eec9-ca43-4a5c-b4e1-4d9d384473e2",
+                  "width": 236,
+                  "x": 10,
+                  "y": 10,
+                  "zOrder": 2,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 44,
+                  "layer": "",
+                  "name": "FillBar",
+                  "persistentUuid": "4833affb-a8d1-4a2b-9019-a20cf5fdc68e",
+                  "width": 196,
+                  "x": 10,
+                  "y": 10,
+                  "zOrder": 3,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridDepth": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridOffsetZ": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 2.167887152351186,
+                "windowMask": false,
+                "selectedLayer": "",
+                "gameEditorMode": "instances-editor"
+              }
+            },
+            {
               "areaMaxX": 224,
               "areaMaxY": 34,
               "areaMaxZ": 64,
@@ -31952,6 +32710,7 @@
                   "height": 15,
                   "leftMargin": 11,
                   "name": "Background",
+                  "persistentUuid": "d0483aa5-4256-41e9-8ee6-0b3e1c0300b0",
                   "rightMargin": 11,
                   "texture": "Copper Bar Border.png",
                   "tiled": false,
@@ -32501,6 +33260,7 @@
                   "height": 8,
                   "leftMargin": 4,
                   "name": "FillBar",
+                  "persistentUuid": "5594d0c2-3845-47ed-8f5d-733405deb169",
                   "rightMargin": 4,
                   "texture": "Framed Pixel Red Fill Bar.png",
                   "tiled": false,
@@ -32572,6 +33332,7 @@
                   "height": 15,
                   "leftMargin": 11,
                   "name": "Background",
+                  "persistentUuid": "0a45aaa4-1f9e-4dc0-a15a-68dc0e97ddeb",
                   "rightMargin": 11,
                   "texture": "Copper Bar Border.png",
                   "tiled": false,
