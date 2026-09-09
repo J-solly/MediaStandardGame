@@ -641,6 +641,30 @@
         "name": "homeAreaHouses-2.png3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "caveBottomMedia.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "caveBottomMedia.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "caveTopMedia.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "caveTopMedia.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite4",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -780,10 +804,10 @@
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.9,
-          "RightwardSpeed": 0.9,
-          "UpwardSpeed": 0.9,
-          "DownwardSpeed": 0.9,
+          "LeftwardSpeed": 0.98,
+          "RightwardSpeed": 0.98,
+          "UpwardSpeed": 0.98,
+          "DownwardSpeed": 0.98,
           "FollowOnX": true,
           "FollowOnY": true,
           "FollowFreeAreaLeft": 0,
@@ -4226,7 +4250,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.961036869371487,
+        "zoomFactor": 0.1956110053676979,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4250,8 +4274,8 @@
           "layer": "",
           "name": "grassBlock",
           "persistentUuid": "037a9a4d-bd8f-43d9-b44b-8bd908768813",
-          "width": 2362,
-          "x": -33,
+          "width": 2368,
+          "x": -39,
           "y": 597,
           "zOrder": 1,
           "numberProperties": [],
@@ -4267,7 +4291,7 @@
           "layer": "",
           "name": "dirtBlock",
           "persistentUuid": "910ae135-3c0e-4252-95da-e96e5ea86dcf",
-          "width": 2369,
+          "width": 2368,
           "x": -39,
           "y": 656,
           "zOrder": 2,
@@ -4286,7 +4310,7 @@
           "width": 0,
           "x": 550,
           "y": 520,
-          "zOrder": 17,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4581,6 +4605,90 @@
           "x": 297,
           "y": 55,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "caveBottom",
+          "persistentUuid": "ab7a08e2-96b2-43f1-87c6-ca1a42735a3a",
+          "width": 0,
+          "x": 1979,
+          "y": 347,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "caveTop",
+          "persistentUuid": "872df89a-c83e-4c35-8b92-081832547e4d",
+          "width": 0,
+          "x": 1979,
+          "y": 347,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "NewText",
+          "persistentUuid": "5b001084-94ff-42e1-a398-d8486013a08d",
+          "width": 0,
+          "x": 38,
+          "y": 144,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 4649,
+          "keepRatio": true,
+          "layer": "",
+          "name": "blockExit",
+          "opacity": 0,
+          "persistentUuid": "f93c7935-8aa9-4676-826b-a01468f88028",
+          "width": 32,
+          "x": -69,
+          "y": -1370,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 4649,
+          "keepRatio": true,
+          "layer": "",
+          "name": "blockExit",
+          "opacity": 0,
+          "persistentUuid": "905b5c30-ec29-4d63-810c-91663be17c18",
+          "width": 32,
+          "x": 2328,
+          "y": -1201,
+          "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4906,6 +5014,192 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "caveBottom",
+          "persistentUuid": "ad11bd8b-1032-4fb5-95c1-4e4bdb20d854",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "caveBottomMedia.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 28,
+                            "y": 15
+                          },
+                          {
+                            "x": 350,
+                            "y": 15
+                          },
+                          {
+                            "x": 350,
+                            "y": 250
+                          },
+                          {
+                            "x": 28,
+                            "y": 250
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "caveTop",
+          "persistentUuid": "4e6838d2-428a-49d9-83c4-2d2080bde5e1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "caveTopMedia.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112,
+                            "y": 84
+                          },
+                          {
+                            "x": 350,
+                            "y": 84
+                          },
+                          {
+                            "x": 350,
+                            "y": 250
+                          },
+                          {
+                            "x": 112,
+                            "y": 250
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "persistentUuid": "ce04855c-ca5c-4be8-a006-14f30382b684",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "blockExit",
+          "persistentUuid": "92757e80-ae60-4df1-afea-3ed93f5189b5",
+          "texture": "NewTiledSprite4",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -4925,6 +5219,18 @@
           },
           {
             "objectName": "controlsText"
+          },
+          {
+            "objectName": "caveBottom"
+          },
+          {
+            "objectName": "caveTop"
+          },
+          {
+            "objectName": "NewText"
+          },
+          {
+            "objectName": "blockExit"
           }
         ]
       },
@@ -4940,6 +5246,96 @@
             "includeConfig": 0
           },
           "target": "general code"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "player",
+                ">=",
+                "1650"
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraCenterX"
+              },
+              "parameters": [
+                "",
+                ">=",
+                "1675",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "player",
+                "<=",
+                "570"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -5034,6 +5430,23 @@
             "textR": 0
           },
           "comment": "Demo"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NewText",
+                "Text",
+                "=",
+                "\"x:\"+ ToString(player.X())+\"y:\"+ToString(player.Y())"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
