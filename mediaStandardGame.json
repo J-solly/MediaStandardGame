@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Main menu",
   "gdVersion": {
     "build": 281,
     "major": 5,
@@ -663,6 +663,30 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "NewTiledSprite4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "betterTreeMedia.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "betterTreeMedia.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/betterTreeMedia.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "betterTreeMedia",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/betterTreeMedia2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/betterTreeMedia2.png\"}",
+        "name": "betterTreeMedia2",
         "smoothed": true,
         "userAdded": false
       }
@@ -4250,7 +4274,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.1956110053676979,
+        "zoomFactor": 1.061571430522031,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4437,7 +4461,7 @@
           "name": "tree",
           "persistentUuid": "7afdfc3e-8d8b-429c-a83b-ef1c786e477d",
           "width": 0,
-          "x": 717,
+          "x": 652,
           "y": 297,
           "zOrder": 10,
           "numberProperties": [],
@@ -4637,22 +4661,6 @@
           "x": 1979,
           "y": 347,
           "zOrder": 31,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "NewText",
-          "persistentUuid": "5b001084-94ff-42e1-a398-d8486013a08d",
-          "width": 0,
-          "x": 38,
-          "y": 144,
-          "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4861,7 +4869,7 @@
           ],
           "animations": [
             {
-              "name": "treeMedia-1.png",
+              "name": "betterTreeMedia",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -4871,7 +4879,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treeMedia-1.png.png",
+                      "image": "betterTreeMedia2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4887,36 +4895,58 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 21,
-                            "y": 83.5
+                            "x": 253.5,
+                            "y": 112.5
                           },
                           {
-                            "x": 45.5,
-                            "y": 49
+                            "x": 168,
+                            "y": 132.5
                           },
                           {
-                            "x": 102.5,
-                            "y": 26.5
+                            "x": 51,
+                            "y": 124.5
                           },
                           {
-                            "x": 172,
-                            "y": 26.5
+                            "x": 27,
+                            "y": 93
                           },
                           {
-                            "x": 274.5,
-                            "y": 57
+                            "x": 63,
+                            "y": 59
                           },
                           {
-                            "x": 285,
-                            "y": 96.5
+                            "x": 129.5,
+                            "y": 47
                           },
                           {
-                            "x": 199,
-                            "y": 122.5
+                            "x": 220,
+                            "y": 54
                           },
                           {
-                            "x": 98.5,
-                            "y": 110.5
+                            "x": 269.5,
+                            "y": 79.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 203,
+                            "y": 173.5
+                          },
+                          {
+                            "x": 207,
+                            "y": 146
+                          },
+                          {
+                            "x": 231,
+                            "y": 134
+                          },
+                          {
+                            "x": 268.5,
+                            "y": 141.5
+                          },
+                          {
+                            "x": 250,
+                            "y": 179
                           }
                         ]
                       ]
@@ -5139,50 +5169,6 @@
         },
         {
           "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "NewText",
-          "persistentUuid": "ce04855c-ca5c-4be8-a006-14f30382b684",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Text",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Text",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "0;0;0"
-          }
-        },
-        {
-          "assetStoreId": "",
           "height": 32,
           "name": "blockExit",
           "persistentUuid": "92757e80-ae60-4df1-afea-3ed93f5189b5",
@@ -5193,10 +5179,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -5225,9 +5211,6 @@
           },
           {
             "objectName": "caveTop"
-          },
-          {
-            "objectName": "NewText"
           },
           {
             "objectName": "blockExit"
@@ -5433,17 +5416,27 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "player",
+                ">=",
+                "2140"
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "Scene"
               },
               "parameters": [
-                "NewText",
-                "Text",
-                "=",
-                "\"x:\"+ ToString(player.X())+\"y:\"+ToString(player.Y())"
+                "",
+                "\"demo\"",
+                ""
               ]
             }
           ]
@@ -5775,7 +5768,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7876290101674106,
+        "zoomFactor": 0.08258739885902747,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
